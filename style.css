@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: black;
+  color: #ffffff;
+  background-image: url(cover.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  padding-bottom: 50px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px 5px #6d3f07;
+  }
+  50% {
+    box-shadow: 0 0 0 0 #a2600c;
+  }
+  100% {
+    box-shadow: 0 0 5px 5px #a2600c;
+  }
+}
+
+#player {
+  border-radius: 1;
+  background: linear-gradient(to right, #3a2101 20%, #6d3f07 50%, #a2600c 100%);
+  width: 500px;
+  margin: 20px auto;
+  animation: glowing 8s ease-in-out infinite;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #a2600c;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-volume-slider {
+  background: none;
+}
+
+audio::-webkit-media-controls-play-button {
+  width: 30px;
+  height: 30px;
+  background-image: url(play-button.png);
+}
+
+audio::-webkit-media-controls-pause-button {
+  width: 30px;
+  height: 30px;
+  background-image: url(pause-button.png);
+}
+
+audio::-webkit-media-controls-mute-button {
+  width: 30px;
+  height: 30px;
+  background-image: url(mute-button.png);
+}
+
+audio::-webkit-media-controls-unmute-button {
+  width: 30px;
+  height: 30px;
+  background-image: url(unmute-button.png);
+}
+
+audio::-webkit-media-controls-timeline {
+  width: 300px;
+  height: 10px;
+  background: linear-gradient(to right, #a2600c 0%, #6d3f07 100%);
+  border-radius: 5px;
+}
+
+audio::-webkit-media-controls-timeline-container {
+  background: none;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  width: 50px;
+  height: 10px;
+  background: linear-gradient(to right, #a2600c 0%, #6d3f07 100%);
+  border-radius: 5px;
+}
+
+audio::-webkit-media-controls-volume-slider-container {
+  background: none;
+}
