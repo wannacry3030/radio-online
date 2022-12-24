@@ -5,15 +5,13 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="player-container">
-      <audio
-        id="player"
-        src="desert sand feels warm at night - GEO - C05; desert sand feels warm at night - 夢の砂漠 - 01 指を流れる砂.mp3"
-        controls
-        loop
-      ></audio>
+    <div id="playlist-container">
+      <div class="container--btn">
+        <button id="prev-button">Previous</button>
+        <button id="next-button">Next</button>
+      </div>
+      <audio id="player" controls loop></audio>
     </div>
-    <button id="prev-button" onclick="playPrevious()">Previous</button>
-    <button id="next-button" onclick="playNext()">Next</button>
   </body>
+  <script src="main.js"></script>
 </html>
